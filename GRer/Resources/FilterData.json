@@ -1,0 +1,44 @@
+[
+    {
+        "camera": "GR3",
+        "filter_name": "Kodak B&WW",
+        "is_star": true,
+        "detail": {
+            "effect": "High Black&White",
+            "saturation": 1,
+            "hue": -4,
+            "iso": 100,
+            "white_balance": "Daylight"
+        },
+        "personal_info": "",
+        "id": 1
+    },
+    {
+        "camera": "GR2",
+        "filter_name": "Leica M9",
+        "is_star": true,
+        "detail": {
+            "effect": "Negative Film",
+            "saturation": 1,
+            "hue": -4,
+            "iso": 100,
+            "white_balance": "Daylight"
+        },
+        "personal_info": "",
+        "id": 2
+    },
+    {
+        "camera": "GR2",
+        "filter_name": "Kodak 200",
+        "is_star": true,
+        "detail": {
+            "effect": "Negative Film",
+            "saturation": 1,
+            "hue": -4,
+            "iso": 100,
+            "white_balance": "Daylight"
+        },
+        "personal_info": "",
+        "id": 3
+    }
+]

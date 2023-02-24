@@ -16,6 +16,11 @@
 		1138F8CE29A7AE69001C29FC /* GRerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138F8CD29A7AE69001C29FC /* GRerTests.swift */; };
 		1138F8D829A7AE69001C29FC /* GRerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138F8D729A7AE69001C29FC /* GRerUITests.swift */; };
 		1138F8DA29A7AE69001C29FC /* GRerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138F8D929A7AE69001C29FC /* GRerUITestsLaunchTests.swift */; };
+		11A404A629A8FAB60005EA90 /* FilterData.json in Resources */ = {isa = PBXBuildFile; fileRef = 11A404A529A8FAB60005EA90 /* FilterData.json */; };
+		11A404A829A8FCAE0005EA90 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A404A729A8FCAE0005EA90 /* Filter.swift */; };
+		11A404AA29A8FEE70005EA90 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A404A929A8FEE70005EA90 /* ModelData.swift */; };
+		11A404AC29A90AA90005EA90 /* FilterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A404AB29A90AA90005EA90 /* FilterList.swift */; };
+		11DBAF8E29A8F28D006A6EF1 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DBAF8D29A8F28D006A6EF1 /* GridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,11 @@
 		1138F8D329A7AE69001C29FC /* GRerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GRerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1138F8D729A7AE69001C29FC /* GRerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRerUITests.swift; sourceTree = "<group>"; };
 		1138F8D929A7AE69001C29FC /* GRerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		11A404A529A8FAB60005EA90 /* FilterData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FilterData.json; sourceTree = "<group>"; };
+		11A404A729A8FCAE0005EA90 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		11A404A929A8FEE70005EA90 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		11A404AB29A90AA90005EA90 /* FilterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterList.swift; sourceTree = "<group>"; };
+		11DBAF8D29A8F28D006A6EF1 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,9 @@
 		1138F8B629A7AE62001C29FC /* GRer */ = {
 			isa = PBXGroup;
 			children = (
+				11A404A029A8F57B0005EA90 /* Resources */,
+				11DBAF8C29A8F26F006A6EF1 /* Model */,
+				11DBAF8B29A8F266006A6EF1 /* Views */,
 				1138F8B729A7AE62001C29FC /* GRerApp.swift */,
 				1138F8B929A7AE62001C29FC /* ContentView.swift */,
 				1138F8BB29A7AE68001C29FC /* Assets.xcassets */,
@@ -131,6 +144,32 @@
 				1138F8D929A7AE69001C29FC /* GRerUITestsLaunchTests.swift */,
 			);
 			path = GRerUITests;
+			sourceTree = "<group>";
+		};
+		11A404A029A8F57B0005EA90 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11A404A529A8FAB60005EA90 /* FilterData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		11DBAF8B29A8F266006A6EF1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11DBAF8D29A8F28D006A6EF1 /* GridView.swift */,
+				11A404AB29A90AA90005EA90 /* FilterList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11DBAF8C29A8F26F006A6EF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11A404A729A8FCAE0005EA90 /* Filter.swift */,
+				11A404A929A8FEE70005EA90 /* ModelData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +278,7 @@
 			files = (
 				1138F8BF29A7AE68001C29FC /* Preview Assets.xcassets in Resources */,
 				1138F8BC29A7AE68001C29FC /* Assets.xcassets in Resources */,
+				11A404A629A8FAB60005EA90 /* FilterData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,9 +304,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1138F8C129A7AE68001C29FC /* Persistence.swift in Sources */,
+				11A404A829A8FCAE0005EA90 /* Filter.swift in Sources */,
 				1138F8C429A7AE68001C29FC /* GRer.xcdatamodeld in Sources */,
 				1138F8BA29A7AE62001C29FC /* ContentView.swift in Sources */,
+				11DBAF8E29A8F28D006A6EF1 /* GridView.swift in Sources */,
+				11A404AC29A90AA90005EA90 /* FilterList.swift in Sources */,
 				1138F8B829A7AE62001C29FC /* GRerApp.swift in Sources */,
+				11A404AA29A8FEE70005EA90 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

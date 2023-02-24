@@ -18,16 +18,23 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+            
+            VStack {
+//                Text("GRer Recipes")
+                List {
+                    
+                    ForEach(items) { item in
+                        NavigationLink {
+                            Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                        } label: {
+                            Text(item.timestamp!, formatter: itemFormatter)
+                        }
                     }
+                    .onDelete(perform: deleteItems)
                 }
-                .onDelete(perform: deleteItems)
+                
             }
+            .navigationBarTitle("GRer Recipes")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
@@ -37,8 +44,12 @@ struct ContentView: View {
                         Label("Add Item", systemImage: "plus")
                     }
                 }
+                ToolbarItem {
+                    Button(action: addItem) {
+                        Label("Add Item", systemImage: "minus")
+                    }
+                }
             }
-            Text("Select an item")
         }
     }
 
