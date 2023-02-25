@@ -21,7 +21,7 @@
             "effect": "Negative Film",
             "saturation": 1,
             "hue": -4,
-            "iso": 100,
+            "iso": 600,
             "white_balance": "Daylight"
         },
         "personal_info": "",
@@ -30,12 +30,12 @@
     {
         "camera": "GR2",
         "filter_name": "Kodak 200",
-        "is_star": true,
+        "is_star": false,
         "detail": {
             "effect": "Negative Film",
-            "saturation": 1,
-            "hue": -4,
-            "iso": 100,
+            "saturation": 2,
+            "hue": -5,
+            "iso": 400,
             "white_balance": "Daylight"
         },
         "personal_info": "",

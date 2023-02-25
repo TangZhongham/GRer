@@ -10,11 +10,15 @@ import SwiftUI
 @main
 struct GRerApp: App {
     let persistenceController = PersistenceController.shared
+    
+    @StateObject private var modelData = ModelData()
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+//            ContentView()
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            FilterList()
+                .environmentObject(modelData)
         }
     }
 }

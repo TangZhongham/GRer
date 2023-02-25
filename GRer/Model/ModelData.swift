@@ -6,8 +6,12 @@
 //
 
 import Foundation
+import Combine
 
-var filters: [Filter] = load("FilterData.json")
+final class ModelData: ObservableObject {
+    @Published var filters: [Filter] = load("FilterData.json")
+}
+
 
 
 func load<T: Decodable>(_ filename: String) -> T {

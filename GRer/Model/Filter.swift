@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct Filter: Hashable, Codable {
+struct Filter: Hashable, Codable, Identifiable {
     var id: Int
     var camera: String
     var filter_name: String
     var is_star: Bool
-    private var detail: Detail
+    var detail: Detail
 
     var personal_info: String
     

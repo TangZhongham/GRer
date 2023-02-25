@@ -11,7 +11,7 @@ struct GridView: View {
     var filter: Filter
     
     var body: some View {
-    
+        
         VStack(alignment: .leading) {
             Text(filter.filter_name)
                 .font(.title)
@@ -21,6 +21,13 @@ struct GridView: View {
                 Spacer()
                 Text(filter.camera)
                     .font(.subheadline)
+                if filter.is_star {
+                    Image(systemName: "star.fill")
+                        .foregroundColor(.yellow)
+                } else {
+                    Image(systemName: "star.fill")
+                        .foregroundColor(.white)
+                }
             }
         }
         .padding()
@@ -28,6 +35,8 @@ struct GridView: View {
 }
 
 struct GridView_Previews: PreviewProvider {
+    static var filters = ModelData().filters
+    
     static var previews: some View {
         Group {
             GridView(filter: filters[0])

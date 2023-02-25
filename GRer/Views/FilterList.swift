@@ -8,17 +8,39 @@
 import SwiftUI
 
 struct FilterList: View {
+    @EnvironmentObject var modelData: ModelData
+    @State private var showFavoritesOnly = false
+    
+    var StaredFilters: [Filter] {
+        modelData.filters.filter { filter in
+            (!showFavoritesOnly || filter.is_star)
+        }
+    }
+    
     var body: some View {
-//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        // 整合 GridView
-        List(filters, id: \.id) { filter in
-                    GridView(filter: filter)
+        NavigationView {
+            List {
+                Toggle(isOn: $showFavoritesOnly) {
+                    Text("Favorites only")
                 }
+                ScrollView {
+                    ForEach(StaredFilters) { filter in
+                        NavigationLink {
+                            FilterDetail(filter: filter)
+                        } label: {
+                            GridView(filter: filter)
+                        }
+                    }
+                    .navigationTitle("GR Filters")
+                }
+            }
+        }
     }
 }
 
 struct FilterList_Previews: PreviewProvider {
     static var previews: some View {
         FilterList()
+            .environmentObject(ModelData())
     }
 }
