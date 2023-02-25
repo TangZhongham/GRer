@@ -16,6 +16,7 @@
 		1138F8CE29A7AE69001C29FC /* GRerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138F8CD29A7AE69001C29FC /* GRerTests.swift */; };
 		1138F8D829A7AE69001C29FC /* GRerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138F8D729A7AE69001C29FC /* GRerUITests.swift */; };
 		1138F8DA29A7AE69001C29FC /* GRerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138F8D929A7AE69001C29FC /* GRerUITestsLaunchTests.swift */; };
+		11905BC929AA4B51005A8304 /* MediaPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 11905BC829AA4B51005A8304 /* MediaPicker */; };
 		11A404A629A8FAB60005EA90 /* FilterData.json in Resources */ = {isa = PBXBuildFile; fileRef = 11A404A529A8FAB60005EA90 /* FilterData.json */; };
 		11A404A829A8FCAE0005EA90 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A404A729A8FCAE0005EA90 /* Filter.swift */; };
 		11A404AA29A8FEE70005EA90 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A404A929A8FEE70005EA90 /* ModelData.swift */; };
@@ -69,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11905BC929AA4B51005A8304 /* MediaPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +196,9 @@
 			dependencies = (
 			);
 			name = GRer;
+			packageProductDependencies = (
+				11905BC829AA4B51005A8304 /* MediaPicker */,
+			);
 			productName = GRer;
 			productReference = 1138F8B429A7AE62001C29FC /* GRer.app */;
 			productType = "com.apple.product-type.application";
@@ -266,6 +271,9 @@
 				Base,
 			);
 			mainGroup = 1138F8AB29A7AE62001C29FC;
+			packageReferences = (
+				11905BC729AA4B50005A8304 /* XCRemoteSwiftPackageReference "MediaPicker" */,
+			);
 			productRefGroup = 1138F8B529A7AE62001C29FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -637,6 +645,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11905BC729AA4B50005A8304 /* XCRemoteSwiftPackageReference "MediaPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/MediaPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11905BC829AA4B51005A8304 /* MediaPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11905BC729AA4B50005A8304 /* XCRemoteSwiftPackageReference "MediaPicker" */;
+			productName = MediaPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		1138F8C229A7AE68001C29FC /* GRer.xcdatamodeld */ = {

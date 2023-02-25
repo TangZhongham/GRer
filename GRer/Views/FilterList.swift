@@ -32,9 +32,27 @@ struct FilterList: View {
                         }
                     }
                     .navigationTitle("GR Filters")
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            EditButton()
+                        }
+                        ToolbarItem {
+                            Button(action: addItem) {
+                                Label("Add Item", systemImage: "plus")
+                            }
+                        }
+                    }
                 }
             }
         }
+    }
+    
+    private func addItem() {
+        print("add items")
+    }
+
+    private func deleteItems(offsets: IndexSet) {
+        print("delete items")
     }
 }
 
