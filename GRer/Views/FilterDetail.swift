@@ -19,14 +19,7 @@ struct FilterDetail: View {
     
     var body: some View {
         ScrollView {
-            
-            Text("Photos View")
-            //                .padding(.top)
-                .foregroundColor(.pink)
-                .ignoresSafeArea(edges: .top)
-                .frame(height: 200)
-            
-            Divider()
+        
             
             VStack(alignment: .leading) {
                 HStack {
@@ -34,6 +27,7 @@ struct FilterDetail: View {
                         .font(.title)
                     FavoriteButton(isSet: $modelData.filters[filterIndex].is_star)
                 }
+                .padding(.leading)
             
                 HStack {
                     Text(filter.camera)
@@ -47,6 +41,7 @@ struct FilterDetail: View {
                 }
                 .font(.subheadline)
                 .foregroundColor(.secondary)
+                .padding(.leading)
             }
             
             Divider()
@@ -61,6 +56,16 @@ struct FilterDetail: View {
                 Text(String(filter.detail.saturation))
                 
             }
+            
+            Divider()
+            
+            Text("Photos View")
+            //                .padding(.top)
+                .foregroundColor(.pink)
+                .ignoresSafeArea(edges: .top)
+                .frame(height: 200)
+            
+            
         }
         .navigationTitle(filter.filter_name)
         .navigationBarTitleDisplayMode(.inline)

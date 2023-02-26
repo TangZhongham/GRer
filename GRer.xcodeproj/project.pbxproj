@@ -18,6 +18,8 @@
 		1138F8DA29A7AE69001C29FC /* GRerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138F8D929A7AE69001C29FC /* GRerUITestsLaunchTests.swift */; };
 		11905BC929AA4B51005A8304 /* MediaPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 11905BC829AA4B51005A8304 /* MediaPicker */; };
 		11905BCC29AB3662005A8304 /* SKPhotoBrowser in Frameworks */ = {isa = PBXBuildFile; productRef = 11905BCB29AB3662005A8304 /* SKPhotoBrowser */; };
+		11905BD229AB583A005A8304 /* MediaCore in Frameworks */ = {isa = PBXBuildFile; productRef = 11905BD129AB583A005A8304 /* MediaCore */; };
+		11905BD429AB583A005A8304 /* MediaSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 11905BD329AB583A005A8304 /* MediaSwiftUI */; };
 		11A404A629A8FAB60005EA90 /* FilterData.json in Resources */ = {isa = PBXBuildFile; fileRef = 11A404A529A8FAB60005EA90 /* FilterData.json */; };
 		11A404A829A8FCAE0005EA90 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A404A729A8FCAE0005EA90 /* Filter.swift */; };
 		11A404AA29A8FEE70005EA90 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A404A929A8FEE70005EA90 /* ModelData.swift */; };
@@ -72,7 +74,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				11905BCC29AB3662005A8304 /* SKPhotoBrowser in Frameworks */,
+				11905BD229AB583A005A8304 /* MediaCore in Frameworks */,
 				11905BC929AA4B51005A8304 /* MediaPicker in Frameworks */,
+				11905BD429AB583A005A8304 /* MediaSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,13 +158,6 @@
 			path = GRerUITests;
 			sourceTree = "<group>";
 		};
-		11905BCD29AB4F9A005A8304 /* PhotosView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PhotosView;
-			sourceTree = "<group>";
-		};
 		11A404A029A8F57B0005EA90 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,7 +169,6 @@
 		11DBAF8B29A8F266006A6EF1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				11905BCD29AB4F9A005A8304 /* PhotosView */,
 				11DBAF8D29A8F28D006A6EF1 /* GridView.swift */,
 				11A404AB29A90AA90005EA90 /* FilterList.swift */,
 				11A404AF29A9FF1F0005EA90 /* FavoriteButton.swift */,
@@ -209,6 +205,8 @@
 			packageProductDependencies = (
 				11905BC829AA4B51005A8304 /* MediaPicker */,
 				11905BCB29AB3662005A8304 /* SKPhotoBrowser */,
+				11905BD129AB583A005A8304 /* MediaCore */,
+				11905BD329AB583A005A8304 /* MediaSwiftUI */,
 			);
 			productName = GRer;
 			productReference = 1138F8B429A7AE62001C29FC /* GRer.app */;
@@ -285,6 +283,7 @@
 			packageReferences = (
 				11905BC729AA4B50005A8304 /* XCRemoteSwiftPackageReference "MediaPicker" */,
 				11905BCA29AB3661005A8304 /* XCRemoteSwiftPackageReference "SKPhotoBrowser" */,
+				11905BD029AB583A005A8304 /* XCRemoteSwiftPackageReference "Media" */,
 			);
 			productRefGroup = 1138F8B529A7AE62001C29FC /* Products */;
 			projectDirPath = "";
@@ -675,6 +674,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		11905BD029AB583A005A8304 /* XCRemoteSwiftPackageReference "Media" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/crelies/Media";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -687,6 +694,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 11905BCA29AB3661005A8304 /* XCRemoteSwiftPackageReference "SKPhotoBrowser" */;
 			productName = SKPhotoBrowser;
+		};
+		11905BD129AB583A005A8304 /* MediaCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11905BD029AB583A005A8304 /* XCRemoteSwiftPackageReference "Media" */;
+			productName = MediaCore;
+		};
+		11905BD329AB583A005A8304 /* MediaSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11905BD029AB583A005A8304 /* XCRemoteSwiftPackageReference "Media" */;
+			productName = MediaSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 
