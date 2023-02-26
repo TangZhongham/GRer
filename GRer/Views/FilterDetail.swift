@@ -10,6 +10,7 @@ import SwiftUI
 struct FilterDetail: View {
     
     @EnvironmentObject var modelData: ModelData
+    
     var filter: Filter
     
     var filterIndex: Int {
@@ -69,5 +70,6 @@ struct FilterDetail: View {
 struct FilterDetail_Previews: PreviewProvider {
     static var previews: some View {
         FilterDetail(filter: ModelData().filters[0])
+            .environmentObject(ModelData())
     }
 }
