@@ -30,6 +30,8 @@ struct FilterList: View {
                         } label: {
                             GridView(filter: filter)
                         }
+                        // 文字悬浮在图片上方
+//                        .overlay(TextOverlay(filter: filter))
                     }
                     .navigationTitle("GR Filters")
                     .toolbar {
@@ -42,6 +44,7 @@ struct FilterList: View {
                             }
                         }
                     }
+                    
                 }
             }
         }
@@ -55,6 +58,32 @@ struct FilterList: View {
         print("delete items")
     }
 }
+
+struct TextOverlay: View {
+    var filter: Filter
+
+    var gradient: LinearGradient {
+        .linearGradient(
+            Gradient(colors: [.black.opacity(0.6), .black.opacity(0)]),
+            startPoint: .bottom,
+            endPoint: .center)
+    }
+
+    var body: some View {
+        ZStack(alignment: .bottomLeading) {
+            gradient
+            VStack(alignment: .leading) {
+                Text(filter.filter_name)
+                    .font(.title)
+                    .bold()
+                Text(filter.camera)
+            }
+            .padding()
+        }
+        .foregroundColor(.white)
+    }
+}
+
 
 struct FilterList_Previews: PreviewProvider {
     static var previews: some View {
