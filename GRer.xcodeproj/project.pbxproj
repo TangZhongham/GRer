@@ -100,6 +100,7 @@
 		1138F8AB29A7AE62001C29FC = {
 			isa = PBXGroup;
 			children = (
+				11C9610C29C71F2A0053C240 /* Resources */,
 				1138F8B629A7AE62001C29FC /* GRer */,
 				1138F8CC29A7AE69001C29FC /* GRerTests */,
 				1138F8D629A7AE69001C29FC /* GRerUITests */,
@@ -162,6 +163,13 @@
 			isa = PBXGroup;
 			children = (
 				11A404A529A8FAB60005EA90 /* FilterData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		11C9610C29C71F2A0053C240 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Resources;
 			sourceTree = "<group>";

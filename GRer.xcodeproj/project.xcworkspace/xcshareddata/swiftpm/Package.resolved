@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "media",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/crelies/Media",
+      "state" : {
+        "revision" : "84acbe8e4f5c62e304582d5a2d32edfaa509f839",
+        "version" : "3.0.0"
+      }
+    },
+    {
+      "identity" : "mediapicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/exyte/MediaPicker.git",
+      "state" : {
+        "revision" : "10f4996131764cab509d1ceb67bc77750ad32433",
+        "version" : "0.1.2"
+      }
+    },
+    {
+      "identity" : "skphotobrowser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/suzuki-0000/SKPhotoBrowser",
+      "state" : {
+        "revision" : "f9d8589310ad935270c2b24b3f97c5a89970aff5",
+        "version" : "7.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}
