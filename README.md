@@ -4,13 +4,15 @@
 
 Development Stack: Swift + SwiftUI + Combine + Photos
 
+![](https://github.com/TangZhongham/GRer/blob/main/Resources/screenshot.gif)
+
 Screenshots:
 
-<img src="https://github.com/TangZhongham/GRer/blob/main/Resources/1.jpg" width=50% height=50%>
+<img src="https://github.com/TangZhongham/GRer/blob/main/Resources/1.jpg" width=25% height=25%>
 
-<img src="https://github.com/TangZhongham/GRer/blob/main/Resources/2.jpg" width=50% height=50%>
+<img src="https://github.com/TangZhongham/GRer/blob/main/Resources/2.jpg" width=25% height=25%>
 
-<img src="https://github.com/TangZhongham/GRer/blob/main/Resources/3.jpg" width=50% height=50%>
+<img src="https://github.com/TangZhongham/GRer/blob/main/Resources/3.jpg" width=25% height=25%>
 
 
-![](https://github.com/TangZhongham/GRer/blob/main/Resources/screenshot.gif)
+
