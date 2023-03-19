@@ -4,13 +4,13 @@
 
 Development Stack: Swift + SwiftUI + Combine + Photos
 
-![](../GRer/Resources/screenshot.gif)
+![](../Resources/screenshot.gif)
 
 Screenshots:
 
 
-![](../GRer/Resources/1.jpg)
+![](../Resources/1.jpg)
 
-![](../GRer/Resources/2.jpg)
+![](../Resources/2.jpg)
 
-![](../GRer/Resources/3.jpg)
+![](../Resources/3.jpg)
